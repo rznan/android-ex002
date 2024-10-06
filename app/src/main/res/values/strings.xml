@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ex002</string>
+    <string name="author_data">Renan Santos Carvalho\n1110482313034</string>
+    <string name="mainTitle" >Equação 2° Grau</string>
+    <string name="hintValueA">a</string>
+    <string name="hintValueB">b</string>
+    <string name="hintValueC">c</string>
+    <string name="calculateButton">Calcular!</string>
+    <string name="invalidInput">Não é uma equação do 2°grau!</string>
+
+    <string name="x1Result">x1: </string>
+    <string name="x2Result">x1: </string>
+
+    <string name="deltaAbove0">Delta: </string>
+    <string name="deltaIs0">Delta é zero. x: </string>
+    <string name="deltaNegative">Sem raízes reais. Delta: </string>
+
+
+</resources>

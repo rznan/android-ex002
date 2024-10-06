@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etValueA"
+        android:layout_width="266dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="104dp"
+        android:importantForAutofill="no"
+        android:ems="10"
+        android:hint="@string/hintValueA"
+        android:inputType="numberSigned|numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etValueB"
+        android:layout_width="266dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="44dp"
+        android:importantForAutofill="no"
+        android:ems="10"
+        android:hint="@string/hintValueB"
+        android:inputType="numberSigned|numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etValueA" />
+
+    <EditText
+        android:id="@+id/etValueC"
+        android:layout_width="266dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="48dp"
+        android:importantForAutofill="no"
+        android:ems="10"
+        android:hint="@string/hintValueC"
+        android:inputType="numberSigned|numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etValueB" />
+
+    <TextView
+        android:id="@+id/authorInfo"
+        android:layout_width="379dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/author_data"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="@string/mainTitle"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/etValueA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="243dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/calculateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etValueC" />
+
+    <TextView
+        android:id="@+id/x1Result"
+        android:layout_width="118dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/otherResults"
+        app:layout_constraintEnd_toStartOf="@+id/x2Result"
+        app:layout_constraintHorizontal_bias="0.277"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/x2Result"
+        android:layout_width="118dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/otherResults"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/otherResults"
+        android:layout_width="220dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="92dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
